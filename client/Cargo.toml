@@ -1,0 +1,11 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+default-run = "client"
+
+[dependencies]
+async-std.workspace = true
+crossterm.workspace = true
+tui.workspace = true
+utils = { path = "../utils" }
