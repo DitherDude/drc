@@ -24,7 +24,7 @@ async fn main() -> Result<(), io::Error> {
         Span::styled("Welcome to ", Style::default().fg(Color::White)),
         Span::styled("Dithers Relay Chat", Style::default().fg(Color::Magenta)),
         Span::styled(
-            "!\nTo exit at any time, press ",
+            "!\n To exit at any time, press ",
             Style::default().fg(Color::White),
         ),
         Span::styled("Ctrl", Style::default().fg(Color::Green)),
@@ -178,7 +178,7 @@ async fn main() -> Result<(), io::Error> {
                             username = content.clone();
                             para_text_lock.lines.push(Spans::from(vec![
                                 Span::styled("Username set to ", Style::default().fg(Color::White)),
-                                Span::styled(username.clone(), Style::default().fg(Color::Blue)),
+                                Span::styled(username.clone(), Style::default().fg(Color::Green)),
                                 Span::styled(".", Style::default().fg(Color::White)),
                             ]))
                         } else {
